@@ -4,7 +4,7 @@ const Navbar = ( ) => {
     return (
         <div className="navbar">
             {/*Sidebar*/}
-            <div className="Wrapper">
+            <div className="wrapper">
                 <span>JenDev</span>
                 <div className="social">
                     <a href="#"><img src="/facebook.png" alt=""/></a>

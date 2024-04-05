@@ -1,9 +1,10 @@
+import Test from "./Test";
 import "./app.scss"
 import Navbar from "./components/navbar/NavBar";
 
 const App = () => {
   return <div>
-    <section>
+    {/*<section>
       <Navbar/>
     </section>
     <section>Parallax</section>
@@ -12,8 +13,10 @@ const App = () => {
     <section>Portofolio1</section>
     <section>Portofolio2</section>
     <section>Portofolio3</section>
-    <section>Contac</section>
+    <section>Contac</section>*/}
+    <Test/>
     </div>;
+    
 };
 
 export default App;
