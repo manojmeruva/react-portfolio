@@ -1,22 +1,22 @@
 .hero {
-    height: calc(200vh - 200px);
+    height: calc(100% - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative;
 
 
     .wrapper {
-       max-width: 1100px; 
+       max-width: 1000px; 
        height: 100%;
        margin: auto;
 
        .textContainer{
-        width: 50%;
+        width: 150%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 40px;
+        gap: 20px;
 
 
         h2{
@@ -26,7 +26,7 @@
         }
 
         h1{
-            font-size: 88px;
+            font-size: 68px;
         }
 
         .buttons{
@@ -60,9 +60,12 @@
     
     .slidingTextContainer{
         position: absolute;
-        font-size: 50vh;
+        font-size: 70vh;
         bottom: -120px;
         white-space: nowrap;
         color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+
     }
 }
