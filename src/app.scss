@@ -3,7 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,6 +23,8 @@ a {
 
 section{
     height: 100vh;
+    width: 100vw;
     scroll-snap-align: center;
+    overflow: hidden;
 
 }

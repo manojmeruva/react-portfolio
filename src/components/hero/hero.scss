@@ -16,17 +16,22 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 20px;
+        gap: 5px;
 
+        
 
-        h2{
-           font-size: 30px;
-           color: rebeccapurple;
-           letter-spacing: 10px;
-        }
-
+        h2 {
+            font-family: 'Merienda', cursive; // Aplicar la nueva fuente a h2
+            font-size: 30px; // Tamaño de fuente personalizado
+            font-weight: 500; // Peso de fuente medium
+            color: rebeccapurple;
+            letter-spacing: 10px;
+        
+            }
         h1{
-            font-size: 68px;
+            font-family: 'Merienda', cursive; // Aplicar la nueva fuente a h1
+            font-size: 58px; // Tamaño de fuente personalizado
+            font-weight: 800; // Peso de fuente extrabold
         }
 
         .buttons{
@@ -60,8 +65,8 @@
     
     .slidingTextContainer{
         position: absolute;
-        font-size: 70vh;
-        bottom: -120px;
+        font-size: 50vh;
+        bottom: -60px;
         white-space: nowrap;
         color: #ffffff09;
         width: 50%;
