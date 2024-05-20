@@ -1,5 +1,5 @@
 import "./app.scss";
-import Contact from "./components/contact/Contac";
+import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/cursor";
 import Hero from "./components/hero/Hero";
 import NavBar from "./components/navbar/NavBar";
