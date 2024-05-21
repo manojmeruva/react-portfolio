@@ -5,31 +5,26 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Web Design",
-    img: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Bill Buddy",
+    img: "/bill-buddy.PNG",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Bill Buddy is a web-based app, so users don't need to install it on their smartphones. It is designed for splitting bills with friends, offering features like multiple payment options, tracking member payments, and real-time collaborative bill editing.",
+    demo: "https://drive.google.com/file/d/1Je_u3ATuMeENc0LgUMgmDZxiwx6jd6iU/view?usp=sharing",
   },
   {
     id: 2,
-    title: "Javascript App",
-    img: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Book Store",
+    img: "/gramedia-clone.PNG",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "This web-based bookstore app, built with Next.js for educational purposes, allows users to browse, search, and purchase books online, featuring a shopping cart, secure checkout, and user account management.",
+    demo: "https://my-app-psi-ashen.vercel.app/",
   },
   {
     id: 3,
-    title: "Mobile App",
-    img: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    id: 4,
-    title: "Web Design",
-    img: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Other",
+    img: "/other-project.jpg",
+    description: "Yout can find other project on my github.",
+    demo: "https://github.com/riefqialviansyah?tab=repositories",
   },
 ];
 
@@ -48,12 +43,14 @@ function Single({ item }) {
       <div className="container">
         <div className="wrapper">
           <div className="imgContainer" ref={ref}>
-            <img src={item.img} alt="" />
+            <img src={`${item.img}`} alt="" />
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>See Demo</button>
+            <a href={item.demo} target="blank">
+              <button>See Demo</button>
+            </a>
           </motion.div>
         </div>
       </div>

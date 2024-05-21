@@ -1,5 +1,5 @@
 import "./hero.scss";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const textVariants = {
   initial: {
@@ -76,12 +76,14 @@ export default function Hero() {
               Contact Me
             </motion.button>
           </motion.div>
-          <motion.img
-            src="/scroll.png"
-            alt=""
-            variants={textVariants}
-            animate="scrollButton"
-          />
+          <a href="#Skills">
+            <motion.img
+              src="/scroll.png"
+              alt=""
+              variants={textVariants}
+              animate="scrollButton"
+            />
+          </a>
         </motion.div>
       </motion.div>
       <motion.div

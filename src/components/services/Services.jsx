@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./services.scss";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
+import { HiArrowRight } from "react-icons/hi";
 
 const variants = {
   initial: {
@@ -33,15 +34,13 @@ export default function Services() {
       className="services"
       variants={variants}
       initial="initial"
-      //   animate="animate"
-      //   whileInView="animate"
       ref={ref}
       animate={isInView && "animate"}
     >
       <motion.div className="textContainer">
         <p>
-          I focus on helping yout brand grow
-          <br /> and move forwad
+          {`"First, solve the problem. Then, write the code."`}
+          <br /> - John Johnson
         </p>
         <hr />
       </motion.div>
@@ -49,19 +48,22 @@ export default function Services() {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{ color: "Orange" }}>Unique</motion.b> Ideas
+            My
+            <motion.b whileHover={{ color: "Orange" }}> Skills</motion.b>
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "Orange" }}>For Your</motion.b>{" "}
-            Business.
+            <motion.b whileHover={{ color: "Orange" }}>Let See</motion.b> What I
+            Do
           </h1>
-          <motion.button
-            whileHover={{ scale: 1.1, color: "white", fontWeight: "bold" }}
-          >
-            WHAT I DO
-          </motion.button>
+          <a href="#Portfolio">
+            <motion.button
+              whileHover={{ scale: 1.1, color: "white", fontWeight: "bold" }}
+            >
+              <HiArrowRight size={80} />
+            </motion.button>
+          </a>
         </div>
       </motion.div>
       <motion.div className="listContainer">
@@ -69,48 +71,84 @@ export default function Services() {
           className="box"
           whileHover={{ backgroundColor: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            fugit similique nam nemo voluptas labore suscipit eum ex. Fugit,
-            neque voluptas quo adipisci possimus voluptatibus.
-          </p>
+          <h2>Languague</h2>
+          <ul>
+            <li>
+              <span>Javascrip</span>
+            </li>
+            <li>
+              <span>Typscript</span>
+            </li>
+            <li>
+              <span>PHP (Basic)</span>
+            </li>
+          </ul>
           <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ backgroundColor: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            fugit similique nam nemo voluptas labore suscipit eum ex. Fugit,
-            neque voluptas quo adipisci possimus voluptatibus.
-          </p>
+          <h2>Backend</h2>
+          <ul>
+            <li>
+              <span>NodeJs</span>
+            </li>
+            <li>
+              <span>Express</span>
+            </li>
+            <li>
+              <span>ORM Sequelize</span>
+            </li>
+            <li>
+              <span>Laravel (Explore)</span>
+            </li>
+          </ul>
           <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ backgroundColor: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            fugit similique nam nemo voluptas labore suscipit eum ex. Fugit,
-            neque voluptas quo adipisci possimus voluptatibus.
-          </p>
+          <h2>Frontend</h2>
+          <ul>
+            <li>
+              <span>ReactJS</span>
+            </li>
+            <li>
+              <span>NextJs</span>
+            </li>
+          </ul>
           <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ backgroundColor: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            fugit similique nam nemo voluptas labore suscipit eum ex. Fugit,
-            neque voluptas quo adipisci possimus voluptatibus.
-          </p>
+          <h2>Mobile</h2>
+          <ul>
+            <li>
+              <span>Apollo GraphQL</span>
+            </li>
+            <li>
+              <span>React Native</span>
+            </li>
+          </ul>
+          <button>Go</button>
+        </motion.div>
+        <motion.div
+          className="box"
+          whileHover={{ backgroundColor: "lightgray", color: "black" }}
+        >
+          <h2>Database</h2>
+          <ul>
+            <li>
+              <span>PostgreSQL</span>
+            </li>
+            <li>
+              <span>MongoDB</span>
+            </li>
+          </ul>
           <button>Go</button>
         </motion.div>
       </motion.div>

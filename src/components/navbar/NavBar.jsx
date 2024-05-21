@@ -12,20 +12,20 @@ export default function NavBar() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Qii Dev
+          Kage Code
         </motion.span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a
+            href="https://www.linkedin.com/in/riefqialviansyah/"
+            target="blank"
+          >
+            <img src="/linkedin.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a
+            href="https://github.com/riefqialviansyah?tab=repositories"
+            target="blank"
+          >
+            <img src="/github.png" alt="" />
           </a>
         </div>
       </div>

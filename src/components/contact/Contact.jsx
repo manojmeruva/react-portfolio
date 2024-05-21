@@ -111,7 +111,7 @@ export default function Contact() {
             rows="8"
             placeholder="Message"
           ></textarea>
-          <button>Submit</button>
+          <button>Send to rifqi</button>
           {error && <span>Something went wrong</span>}
           {success && <span>Message sent successfully</span>}
         </motion.form>

@@ -1,4 +1,10 @@
 import { motion } from "framer-motion";
+import {
+  HiOutlineHome,
+  HiOutlineBookOpen,
+  HiOutlinePresentationChartLine,
+  HiOutlinePhone,
+} from "react-icons/hi";
 
 const variants = {
   open: {
@@ -26,20 +32,31 @@ const itemVariants = {
 };
 
 export default function Links() {
-  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+  const items = [
+    { name: "Homepage", icon: <HiOutlineHome /> },
+    { name: "Skills", icon: <HiOutlineBookOpen /> },
+    { name: "Portfolio", icon: <HiOutlinePresentationChartLine /> },
+    { name: "Contact", icon: <HiOutlinePhone /> },
+  ];
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => {
         return (
           <motion.a
-            href={`#${item}`}
-            key={item}
+            href={`#${item.name}`}
             variants={itemVariants}
-            whileHover={{ scale: 1.1 }}
+            key={item.name}
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "#f8f8f8",
+              color: "#000",
+              borderRadius: "10px",
+            }}
             whileTap={{ scale: 0.95 }}
           >
-            {item}
+            {item.icon}
+            {item.name}
           </motion.a>
         );
       })}

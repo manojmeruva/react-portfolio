@@ -2,11 +2,18 @@ import { motion } from "framer-motion";
 
 export default function ToggleButton({ setOpen }) {
   return (
-    <button onClick={() => setOpen((prev) => !prev)}>
+    <button
+      onClick={() => setOpen((prev) => !prev)}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          stroke="white"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },
@@ -15,7 +22,7 @@ export default function ToggleButton({ setOpen }) {
         />
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          stroke="white"
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
@@ -25,7 +32,7 @@ export default function ToggleButton({ setOpen }) {
         />
         <motion.path
           strokeWidth="3"
-          stroke="black"
+          stroke="white"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 16.344 L 20 16.346" },
