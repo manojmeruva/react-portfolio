@@ -2,6 +2,7 @@ import "./contact.scss";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 const variants = {
   initial: {
@@ -37,7 +38,7 @@ export default function Contact() {
         () => {
           setSuccess(true);
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );

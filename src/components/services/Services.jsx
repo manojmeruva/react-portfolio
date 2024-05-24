@@ -61,7 +61,7 @@ export default function Services() {
             <motion.button
               whileHover={{ scale: 1.1, color: "white", fontWeight: "bold" }}
             >
-              <HiArrowRight size={80} />
+              <HiArrowRight className="arrow" />
             </motion.button>
           </a>
         </div>

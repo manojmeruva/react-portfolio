@@ -26,6 +26,10 @@
       font-size: 20px;
       color: gray;
       text-align: right;
+
+      @include mobile {
+        font-size: 16px;
+      }
     }
 
     hr {
@@ -95,6 +99,10 @@
           width: 150px;
           height: 30px;
         }
+
+        .arrow {
+          font-size: 30px;
+        }
       }
     }
   }
@@ -121,11 +129,15 @@
       @include mobile {
         border: none;
         align-items: center;
-        gap: 5px;
-        padding: 10px;
+        padding: 5px;
       }
 
       p {
+        @include mobile {
+          display: none;
+        }
+      }
+      ul {
         @include mobile {
           display: none;
         }
