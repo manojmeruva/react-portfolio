@@ -1,0 +1,127 @@
+.parallax {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    h1 {
+        font-size: 100px;
+        z-index: 4;
+    }
+
+    .mountains {
+        background-image: url("/spaceship.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+        max-height: 100%;
+    }
+
+    .planets {
+        background-image: url("/planetary.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .stars {
+        background-image: url("/Space.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+
+    }
+
+    .container {
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+        .sliding-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+        height: 100%;
+        background: url("/stars.png") repeat-x;
+            }
+        }
+
+    }
+
+    .socials {
+        z-index: 4;
+
+        .facebook {
+            background-image: url('/facebook.png');
+            background-size: cover;
+            box-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+    }
+.instagram {
+    
+    margin-bottom: 50px;
+    background-image: url('/instagram.png');
+    background-size: cover;
+    box-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    z-index: 4;
+}
+.github{
+    margin-bottom: 50px;
+    background-image: url('/github.png');
+    background-size: cover;
+    box-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    z-index: 4;
+}
+.youtube{
+    margin-bottom: 50px;
+    background-image: url('/youtube.png');
+    background-size: cover;
+    box-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+    z-index: 4;
+}
+
