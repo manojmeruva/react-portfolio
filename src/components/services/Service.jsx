@@ -1,8 +1,7 @@
 import React from 'react'
-//import "./services.scss";
-import './service.scss'
-import { animate, motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import "./service.scss";
+import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
@@ -15,15 +14,15 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      
       duration: 1,
       staggerChildren: 0.1,
     },
   },
 };
 
-const Services = () => {
+const Service = () => {
   const ref = useRef();
+
   const isInView = useInView(ref, { margin: "-100px" });
 
   return (
@@ -31,16 +30,12 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      //animate="animate"
-      //whileInView="animate"
+      // animate="animate"
+      // whileInView="animate"
       ref={ref}
-      animate={isInView && "animate"}
-      //animate={"animate"}
+      animate={"animate"}
     >
-      <motion.div
-        className="textContainer"
-        variants={variants}
-      >
+      <motion.div className="textContainer" variants={variants}>
         <p>
           I focus on helping your brand grow
           <br /> and move forward
@@ -51,12 +46,12 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
           </h1>
           <button>WHAT WE DO?</button>
         </div>
@@ -68,11 +63,10 @@ const Services = () => {
         >
           <h2>Branding</h2>
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
             animi! Ad nam pariatur assumenda quae mollitia libero repellat
             explicabo maiores?
-
           </p>
           <button>Go</button>
         </motion.div>
@@ -80,13 +74,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Design</h2>
+          <h2>Branding</h2>
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
             animi! Ad nam pariatur assumenda quae mollitia libero repellat
             explicabo maiores?
-
           </p>
           <button>Go</button>
         </motion.div>
@@ -94,13 +87,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Development</h2>
+          <h2>Branding</h2>
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
             animi! Ad nam pariatur assumenda quae mollitia libero repellat
             explicabo maiores?
-
           </p>
           <button>Go</button>
         </motion.div>
@@ -108,12 +100,12 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Testing</h2>
+          <h2>Branding</h2>
           <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
             animi! Ad nam pariatur assumenda quae mollitia libero repellat
-
+            explicabo maiores?
           </p>
           <button>Go</button>
         </motion.div>
@@ -122,4 +114,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Service;

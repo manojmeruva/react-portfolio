@@ -1,6 +1,9 @@
 import React from 'react'
 import "./hero.scss";
 import { motion } from "framer-motion";
+
+
+
 const textVariants = {
   initial: {
     x: -500,
@@ -51,11 +54,9 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Web developer and UI designer
           </motion.h1>
-          <motion.div className="buttons" variants={textVariants} >
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button  variants={textVariants} whileHover={{ background: "lightgray", color: "black" }}>Contact Me</motion.button>
+          <motion.div className="buttons"  variants={textVariants}>
+            <motion.button variants={textVariants} >See the Latest Works</motion.button>
+            <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
